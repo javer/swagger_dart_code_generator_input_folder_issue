@@ -1,0 +1,11 @@
+targets:
+  $default:
+    builders:
+      swagger_dart_code_generator:
+        options:
+          input_folder: lib/swagger/
+          input_urls:
+            - "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore.json"
+          output_folder: lib/api/
+          build_only_models: true
+          override_equals_and_hashcode: false
